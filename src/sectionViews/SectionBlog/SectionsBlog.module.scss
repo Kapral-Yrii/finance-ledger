@@ -1,0 +1,57 @@
+@import '../../sassVariables.scss';
+
+.container {
+    width: 280px;
+    padding: 48px 20px 0 20px;
+    background-color: rgba(2, 132, 208, 1);
+    color: white;
+    margin: 0;
+}
+
+.picture {
+    margin: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.button {
+    width: 172px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 58px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $lightTextColor;
+    transform: scale(1);
+    transition-property: transform, background-color;
+    transition-duration: $tr-duration;
+    transition-timing-function: $tr-timing-function;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: #F4F4F4;
+        transform: scale(1.01);
+        border-color: rgba(2, 132, 208, 1);
+        color: rgba(2, 132, 208, 1);
+    }
+}

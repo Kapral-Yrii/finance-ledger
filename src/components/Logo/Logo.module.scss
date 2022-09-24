@@ -1,0 +1,35 @@
+@import '../../sassVariables.scss';
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: $tr-duration;
+    transition-timing-function: $tr-timing-function;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(1.05);
+    }
+}
+
+.icon {
+    width: 40px;
+    height: 35px;
+    margin-right: 8px;
+    fill: $primaryColor;
+}
+
+.ledger {
+    font-size: 28px;
+    line-height: 38px;
+    color: white;
+}
+
+.finance {
+    @extend .ledger;
+    color: $primaryColor;
+    margin-right: 8px;
+}
