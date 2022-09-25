@@ -26,11 +26,12 @@ function App() {
   }, [])
   
   useEffect(() => {
+    const ref = heroRef.current
     const observer = new IntersectionObserver(callbackFunction, options)
-        if (heroRef.current) observer.observe(heroRef.current)
+        if (ref) observer.observe(ref)
 
         return () => {
-            if (heroRef.current) observer.unobserve(heroRef.current)
+            if (ref) observer.unobserve(ref)
         }
     }, [heroRef, options])
 

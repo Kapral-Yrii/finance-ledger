@@ -30,66 +30,68 @@ import '../../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min'
 
 export default function SectionCases() {
     return (
-        <section id="cases" className={style.container}>
-            <p className={style.text}>This is what we do</p>
-            <h2 className={style.title}>Business Cases</h2>
-            <p className={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-            <ul className={style.list}>
-                <li className={style.listItem}>
-                    <a href={cases1_JPG} data-lightbox="gallery" data-title="discussion with the team">
-                        <picture>
-                        <source srcSet={`${cases1_WEBP} 1x, ${cases1_2x_WEBP} 2x`} type="image/webp" />
-                        <source srcSet={`${cases1_JPG} 1x, ${cases1_2x_JPG} 2x`} type="image/jpg" />
-                        <img className={style.image} src={cases1_JPG} alt="discussion with the team" width={421}/>
-                        </picture>
-                    </a>
-                </li>
-                <li className={style.listItem}>
-                    <a href={cases2_JPG} data-lightbox="gallery" data-title="analytics">
-                        <picture>
-                        <source srcSet={`${cases2_WEBP} 1x, ${cases2_2x_WEBP} 2x`} type="image/webp" />
-                        <source srcSet={`${cases2_JPG} 1x, ${cases2_2x_JPG} 2x`} type="image/jpg" />
-                        <img className={style.image} src={cases2_JPG} alt="analytics" width={421}/>
-                        </picture>
-                    </a>
-                </li>
-                <li className={style.listItem}>
-                    <a href={cases3_JPG} data-lightbox="gallery" data-title="agreement">
-                        <picture>
-                        <source srcSet={`${cases3_WEBP} 1x, ${cases3_2x_WEBP} 2x`} type="image/webp" />
-                        <source srcSet={`${cases3_JPG} 1x, ${cases3_2x_JPG} 2x`} type="image/jpg" />
-                        <img className={style.image} src={cases3_JPG} alt="agreement" width={421}/>
-                        </picture>
-                    </a>
-                </li>
-                <li className={style.listItem}>
-                    <a href={cases4_JPG} data-lightbox="gallery" data-title="team spirit">
-                        <picture>
-                        <source srcSet={`${cases4_WEBP} 1x, ${cases4_2x_WEBP} 2x`} type="image/webp" />
-                        <source srcSet={`${cases4_JPG} 1x, ${cases4_2x_JPG} 2x`} type="image/jpg" />
-                        <img className={style.image} src={cases4_JPG} alt="team spirit" width={421}/>
-                        </picture>
-                    </a>
-                </li>
-                <li className={style.listItem}>
-                    <a href={cases5_JPG} data-lightbox="gallery" data-title="work process">
-                        <picture>
-                        <source srcSet={`${cases5_WEBP} 1x, ${cases5_2x_WEBP} 2x`} type="image/webp" />
-                        <source srcSet={`${cases5_JPG} 1x, ${cases5_2x_JPG} 2x`} type="image/jpg" />
-                        <img className={style.image} src={cases5_JPG} alt="work process" width={421}/>
-                        </picture>
-                    </a>
-                </li>
-                <li className={style.listItem}>
-                    <a href={cases6_JPG} data-lightbox="gallery" data-title="buildings">
-                        <picture>
-                        <source srcSet={`${cases6_WEBP} 1x, ${cases6_2x_WEBP} 2x`} type="image/webp" />
-                        <source srcSet={`${cases6_JPG} 1x, ${cases6_2x_JPG} 2x`} type="image/jpg" />
-                        <img className={style.image} src={cases6_JPG} alt="buildings" width={421}/>
-                        </picture>
-                    </a>
-                </li>
-            </ul>
+        <section id="cases" className={style.section}>
+            <div className={style.container}>
+                <p className={style.text}>This is what we do</p>
+                <h2 className={style.title}>Business Cases</h2>
+                <p className={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+                <ul className={style.list}>
+                    <li className={style.listItem}>
+                        <a href={cases1_JPG} data-lightbox="gallery" data-title="discussion with the team">
+                            <picture>
+                                <source srcSet={`${cases1_WEBP} 1x, ${cases1_2x_WEBP} 2x`} type="image/webp" />
+                                <source srcSet={`${cases1_JPG} 1x, ${cases1_2x_JPG} 2x`} type="image/jpg" />
+                                <img className={style.image} src={cases1_JPG} alt="discussion with the team" width={421}/>
+                            </picture>
+                        </a>
+                    </li>
+                    <li className={style.listItem}>
+                        <a href={cases2_JPG} data-lightbox="gallery" data-title="analytics">
+                            <picture>
+                                <source srcSet={`${cases2_WEBP} 1x, ${cases2_2x_WEBP} 2x`} type="image/webp" />
+                                <source srcSet={`${cases2_JPG} 1x, ${cases2_2x_JPG} 2x`} type="image/jpg" />
+                                <img className={style.image} src={cases2_JPG} alt="analytics" width={421}/>
+                            </picture>
+                        </a>
+                    </li>
+                    <li className={style.listItem}>
+                        <a href={cases3_JPG} data-lightbox="gallery" data-title="agreement">
+                            <picture>
+                                <source srcSet={`${cases3_WEBP} 1x, ${cases3_2x_WEBP} 2x`} type="image/webp" />
+                                <source srcSet={`${cases3_JPG} 1x, ${cases3_2x_JPG} 2x`} type="image/jpg" />
+                                <img className={style.image} src={cases3_JPG} alt="agreement" width={421}/>
+                            </picture>
+                        </a>
+                    </li>
+                    <li className={style.listItem}>
+                        <a href={cases4_JPG} data-lightbox="gallery" data-title="team spirit">
+                            <picture>
+                                <source srcSet={`${cases4_WEBP} 1x, ${cases4_2x_WEBP} 2x`} type="image/webp" />
+                                <source srcSet={`${cases4_JPG} 1x, ${cases4_2x_JPG} 2x`} type="image/jpg" />
+                                <img className={style.image} src={cases4_JPG} alt="team spirit" width={421}/>
+                            </picture>
+                        </a>
+                    </li>
+                    <li className={style.listItem}>
+                        <a href={cases5_JPG} data-lightbox="gallery" data-title="work process">
+                            <picture>
+                                <source srcSet={`${cases5_WEBP} 1x, ${cases5_2x_WEBP} 2x`} type="image/webp" />
+                                <source srcSet={`${cases5_JPG} 1x, ${cases5_2x_JPG} 2x`} type="image/jpg" />
+                                <img className={style.image} src={cases5_JPG} alt="work process" width={421}/>
+                            </picture>
+                        </a>
+                    </li>
+                    <li className={style.listItem}>
+                        <a href={cases6_JPG} data-lightbox="gallery" data-title="buildings">
+                            <picture>
+                                <source srcSet={`${cases6_WEBP} 1x, ${cases6_2x_WEBP} 2x`} type="image/webp" />
+                                <source srcSet={`${cases6_JPG} 1x, ${cases6_2x_JPG} 2x`} type="image/jpg" />
+                                <img className={style.image} src={cases6_JPG} alt="buildings" width={421}/>
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     )
 }

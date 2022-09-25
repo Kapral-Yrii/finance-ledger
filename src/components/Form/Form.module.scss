@@ -1,0 +1,89 @@
+@import '../../sassVariables.scss';
+
+.formContainer {
+    width: 280px;
+    padding: 51px 20px 0 20px;
+    background: #F4F4F4; 
+}
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 69px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    position: relative;
+    width: 280px;
+}
+
+.label {
+    position: absolute;
+    z-index: 1;
+    color: #808080;
+    top: 16px;
+    left: 8px;
+    pointer-events: none;
+    transition: transform 250ms linear;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+    transform: translateY(-35px);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 57px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 8px 0 25px 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: $lightTextColor;
+    transform: scale(1);
+    transition-property: transform, background-color;
+    transition-duration: $tr-duration;
+    transition-timing-function: $tr-timing-function;
+    background-color: $primaryColor;
+    &:hover,
+    &:focus {
+        background-color: $primaryColorHover;
+        transform: scale(1.01);
+    }
+}
+
+.error {
+    position: absolute;
+    top: 58px;
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.errorIcon {
+    width: 16px;
+    height: 16px;
+    padding-top: 3px;
+    fill: red;
+}

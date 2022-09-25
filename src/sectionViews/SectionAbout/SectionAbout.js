@@ -1,17 +1,17 @@
 import style from './SectionAbout.module.scss'
-import imgJpg from '../../images/about/people.jpg'
-import imgWebp from '../../images/about/people.webp'
-import imgJpg2x from '../../images/about/people@2x.jpg'
-import imgWebp2x from '../../images/about/people@2x.webp'
+import img_JPG from '../../images/about/people.jpg'
+import img_WEBP from '../../images/about/people.webp'
+import img_2x_JPG from '../../images/about/people@2x.jpg'
+import img_2x_WEBP from '../../images/about/people@2x.webp'
 
 
 export default function SectionAbout() {
     return (
-        <section id="about">
-            <picture className={style.picture}>
-                <source srcSet={`${imgWebp} 1x, ${imgWebp2x} 2x`} type="image/webp" />
-                <source srcSet={`${imgJpg} 1x, ${imgJpg2x} 2x`} type="image/jpg" />
-                <img className={style.image} src="imgJpg" alt="people" width={460}/>
+        <section id="about" className={style.section}>
+            <picture>
+                <source srcSet={`${img_WEBP} 1x, ${img_2x_WEBP} 2x`} type="image/webp" />
+                <source srcSet={`${img_JPG} 1x, ${img_2x_JPG} 2x`} type="image/jpg" />
+                <img className={style.image} src={img_JPG} alt="people" width={460}/>
             </picture>
             <div className={style.container}>
                 <p className={style.text}>What you are looking for</p>

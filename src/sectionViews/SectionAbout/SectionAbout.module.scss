@@ -1,14 +1,14 @@
 @import '../../sassVariables.scss';
 
+.section:before {
+    @extend .anchorStyle;
+}
+
 .container {
     width: 280px;
     padding: 80px 20px 0 20px;
     background-color: $primaryColor;
     color: white;
-    margin: 0;
-}
-
-.picture {
     margin: 0;
 }
 

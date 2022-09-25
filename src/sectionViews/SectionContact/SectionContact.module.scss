@@ -1,0 +1,10 @@
+@import '../../sassVariables.scss';
+
+.section:before {
+    @extend .anchorStyle;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}

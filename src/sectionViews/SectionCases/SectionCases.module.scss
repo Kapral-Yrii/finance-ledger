@@ -1,3 +1,9 @@
+@import '../../sassVariables.scss';
+
+.section:before {
+    @extend .anchorStyle;
+}
+
 .container {
    padding-top: 56px; 
 }

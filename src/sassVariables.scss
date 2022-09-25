@@ -1,5 +1,15 @@
 $primaryColor: #28A745;
 $primaryColorHover: #2EBF4F;
+$textColor: rgba(51, 51, 51, 1);
+$teamLinkColorHover: rgba(255, 255, 255, 0.8);
 $lightTextColor: #fff;
 $tr-duration: 250ms;
 $tr-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.anchorStyle {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: hidden;
+}

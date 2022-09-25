@@ -1,0 +1,17 @@
+@import '../../sassVariables.scss';
+
+.footer {
+    background-color: $textColor;
+    color: $lightTextColor;
+    padding: 20px 0;
+}
+
+.links {
+    width: 216px;
+    margin: 0 auto 12px auto;
+}
+
+.text {
+    text-align: center;
+    margin: 0;
+}

@@ -60,6 +60,9 @@
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 175px;
     height: 57px;
     border-radius: 5px;
@@ -79,4 +82,12 @@
         background-color: $primaryColorHover;
         transform: scale(1.01);
     }
+}
+
+.icon {
+    fill: $lightTextColor;
+    width: 9px;
+    height: 20px;
+    padding: 3.5px 0;
+    margin-right: 8px;
 }

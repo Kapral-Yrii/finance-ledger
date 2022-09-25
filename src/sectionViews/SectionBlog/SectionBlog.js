@@ -1,16 +1,16 @@
 import style from './SectionsBlog.module.scss'
-import imgJpg from '../../images/blog/blog.jpg'
-import imgWebp from '../../images/blog/blog.webp'
-import imgJpg2x from '../../images/blog/blog@2x.jpg'
-import imgWebp2x from '../../images/blog/blog@2x.webp'
+import img_JPG from '../../images/blog/blog.jpg'
+import img_WEBP from '../../images/blog/blog.webp'
+import img_2x_JPG from '../../images/blog/blog@2x.jpg'
+import img_2x_WEBP from '../../images/blog/blog@2x.webp'
 
 export default function SectionBlog() {
     return (
-        <article id="blog">
-            <picture className={style.picture}>
-                <source srcSet={`${imgWebp} 1x, ${imgWebp2x} 2x`} type="image/webp" />
-                <source srcSet={`${imgJpg} 1x, ${imgJpg2x} 2x`} type="image/jpg" />
-                <img className={style.image} src="imgJpg" alt="people" width={460}/>
+        <article id="blog" className={style.article}>
+            <picture>
+                <source srcSet={`${img_WEBP} 1x, ${img_2x_WEBP} 2x`} type="image/webp" />
+                <source srcSet={`${img_JPG} 1x, ${img_2x_JPG} 2x`} type="image/jpg" />
+                <img className={style.image} src={img_JPG} alt="people" width={460}/>
             </picture>
             <div className={style.container}>
                 <p className={style.text}>April 16 2020</p>
