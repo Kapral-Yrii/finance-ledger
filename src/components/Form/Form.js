@@ -11,14 +11,15 @@ export default function Form() {
     return (
         <div className={style.formContainer}>
             <h2 className={style.title}>Request Callback</h2>
-            <form name="signup_form" className={style.form} onSubmit={handleSubmit(onSubmit)}>
+            <form name="contact" method='post' className={style.form} onSubmit={handleSubmit(onSubmit)}>
+                <input type="hidden" name="form-name" value="contact" />
                 <div className={style.inputField}>
-                    <input className={style.input} type="text" name="name" placeholder=' '/>
-                    <label className={style.label}>Enter your name</label>
+                    <input className={style.input} id="user_name" type="text" name="name" placeholder=' '/>
+                    <label className={style.label} for="user_name">Enter your name</label>
                 </div>
                 <div className={style.inputField}>
-                    <input className={style.input} type="email" name="email" placeholder=' ' {...register("email", { required: true })} />
-                    <label className={style.label}>Enter email*</label>
+                    <input className={style.input} id="user_email" type="email" name="email" placeholder=' ' {...register("email", { required: true })} />
+                    <label className={style.label} for="user_email">Enter email*</label>
                     {errors.email &&
                         <span className={style.error}>
                             <svg className={style.errorIcon}>
