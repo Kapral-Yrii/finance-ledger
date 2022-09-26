@@ -2,7 +2,7 @@ import style from './Navigation.module.scss'
 
 export default function Navigation() {
     return (
-        <nav>
+        <nav className={style.navigate}>
             <ul className={style.list}>
                 <li><a className={style.link} href="#home">Home</a></li>
                 <li><a className={style.link} href="#about">About</a></li>

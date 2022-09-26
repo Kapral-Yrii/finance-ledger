@@ -32,9 +32,9 @@ export default function SectionCases() {
     return (
         <section id="cases" className={style.section}>
             <div className={style.container}>
-                <p className={style.text}>This is what we do</p>
+                <p className={style.textAboveTitle}>This is what we do</p>
                 <h2 className={style.title}>Business Cases</h2>
-                <p className={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+                <p className={style.textBelowTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
                 <ul className={style.list}>
                     <li className={style.listItem}>
                         <a href={cases1_JPG} data-lightbox="gallery" data-title="discussion with the team">

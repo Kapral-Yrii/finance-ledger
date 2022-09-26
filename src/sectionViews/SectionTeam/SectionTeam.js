@@ -17,9 +17,9 @@ export default function SectionTeam() {
     return (
         <section>
             <div className={style.container}>
-                <p className={style.text}>Who we are</p>
+                <p className={style.textAboveTitle}>Who we are</p>
                 <h2 className={style.title}>Our Professional Team</h2>
-                <p className={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
+                <p className={style.textBelowTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
             </div>
             <ul className={style.list}>
                 <li className={style.listItem}>

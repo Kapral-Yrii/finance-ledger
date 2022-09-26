@@ -1,12 +1,13 @@
 import style from './Form.module.scss'
 import sprite from '../../images/sprite.svg'
 import { useForm } from "react-hook-form";
+import { useCallback } from 'react';
 
 export default function Form() {
     const { register, handleSubmit, formState: { errors } } = useForm()
-    const onSubmit = (data) => {
+    const onSubmit = useCallback((data) => {
     console.log(data);
-  };
+  },[])
     return (
         <div className={style.formContainer}>
             <h2 className={style.title}>Request Callback</h2>

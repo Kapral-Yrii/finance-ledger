@@ -4,7 +4,41 @@
     @extend .anchorStyle;
 }
 
-.image {
-    display: block;
-    width: 100%;
+.container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
+
+.backgroundImgContainer {
+    width: 100%;
+    height: 220px;
+    background-image: url('../../images/contact/contact.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../../images/contact/contact@2x.jpg');
+    }
+
+    background-image: url('../../images/contact/contact.webp');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../../images/contact/contact@2x.webp');
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 960px;
+        height: 354px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        width: 670px;
+        height: 454px;
+    }
+}
+

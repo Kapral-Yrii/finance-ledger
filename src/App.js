@@ -7,16 +7,16 @@ import SectionBlog from './sectionViews/SectionBlog/SectionBlog'
 import SectionTeam from './sectionViews/SectionTeam/SectionTeam'
 import SectionContact from './sectionViews/SectionContact/SectionContact'
 import Footer from './sectionViews/Footer/Footer';
-import { useEffect, useRef, useState, useMemo } from 'react'
+import { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 
 function App() {
   const heroRef = useRef(null)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  const callbackFunction = (entries) => {
+  const callbackFunction = useCallback((entries) => {
     const [entry] = entries
     setIsScrolled(entry.isIntersecting)
-  }
+  }, [])
 
   const options = useMemo(() => {
     return {
@@ -28,20 +28,23 @@ function App() {
   useEffect(() => {
     const ref = heroRef.current
     const observer = new IntersectionObserver(callbackFunction, options)
-        if (ref) observer.observe(ref)
+    if (ref) {
+      observer.observe(ref)
+    }
 
-        return () => {
-            if (ref) observer.unobserve(ref)
-        }
-    }, [heroRef, options])
+    return () => {
+      if (ref) {
+        observer.unobserve(ref)
+      }
+    }
+  }, [callbackFunction, heroRef, options])
 
   return (
     <Container>
       <Header styleBackground={!isScrolled ? {backgroundColor: 'rgba(51, 51, 51, 0.8)'} : {backgroundColor: 'transparent'}} />
       <main >
-        <div ref={heroRef}>
-          <SectionHero/>
-        </div> 
+        <div ref={heroRef}></div>
+        <SectionHero/>
         <SectionAbout/>
         <SectionCases/>
         <SectionBlog />

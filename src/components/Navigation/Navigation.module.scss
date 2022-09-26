@@ -1,15 +1,32 @@
 @import '../../sassVariables.scss';
 
+.navigate {
+    @media screen  and (min-width: 768px) {
+        margin-top: 5px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        margin-right: 0;
+    }
+}
+
 .list {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
     margin-top: 16px;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #FFFFFF;
     padding: 0 5px 6px 5px;
@@ -17,5 +34,18 @@
         &:hover,
         &:focus {
             border-bottom: 2px solid $primaryColor;
+            padding-bottom: 4px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media screen and (min-width: 1360px) {
+            padding-left: 21px;
+            padding-right: 21px;
         }
 }

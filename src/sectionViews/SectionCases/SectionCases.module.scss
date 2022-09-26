@@ -6,12 +6,34 @@
 
 .container {
    padding-top: 56px; 
+
+   @media screen and (min-width: 768px) {
+        padding-top: 48px;
+   }
+
+   @media screen and (min-width: 1360px) {
+       padding-top: 80px;
+   }
 }
 
-.text {
+.textBelowTitle {
     text-align: center;
     padding: 0 56px;
     margin: 0 0 16px 0;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.textAboveTitle {
+    @extend .textBelowTitle;
+
+    @media screen and (min-width: 1360px) {
+        font-size: 18px;
+        line-height: 33px;
+    }
 }
 
 .title {
@@ -30,6 +52,20 @@
     list-style: none;
     padding: 15px 0 0 0;
     margin: 0 auto 40px auto;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        // margin-right: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 18px;
+        grid-column-gap: 18px;
+    }
+
+    // @media screen and {
+        
+    // }
 }
 
 .listItem:hover,
